@@ -1,0 +1,10 @@
+13:58:43 **** Incremental Build of configuration Debug for project UART-DMA-HALF_AND_FULL ****
+make -j4 all 
+arm-none-eabi-size   UART-DMA-HALF_AND_FULL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12584	     20	   1980	  14584	   38f8	UART-DMA-HALF_AND_FULL.elf
+Finished building: default.size.stdout
+ 
+
+13:58:44 Build Finished. 0 errors, 0 warnings. (took 947ms)
+

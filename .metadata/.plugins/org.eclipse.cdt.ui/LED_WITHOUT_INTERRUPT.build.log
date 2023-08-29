@@ -1,0 +1,10 @@
+18:13:57 **** Incremental Build of configuration Debug for project LED_WITHOUT_INTERRUPT ****
+make -j4 all 
+arm-none-eabi-size   LED_WITHOUT_INTERRUPT.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6460	     20	   1572	   8052	   1f74	LED_WITHOUT_INTERRUPT.elf
+Finished building: default.size.stdout
+ 
+
+18:13:57 Build Finished. 0 errors, 0 warnings. (took 387ms)
+

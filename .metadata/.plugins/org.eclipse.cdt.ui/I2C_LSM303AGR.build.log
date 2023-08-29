@@ -1,0 +1,139 @@
+16:50:27 **** Incremental Build of configuration Debug for project I2C_lsm303agr ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/DNK124/Desktop/priyesh/STM32/I2C_lsm303agr/Drivers/BSP/components/lsm303agr_sensor" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/DNK124/Desktop/priyesh/STM32/I2C_lsm303agr/Drivers/BSP/components/lsm303agr_sensor" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32l0xx.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/DNK124/Desktop/priyesh/STM32/I2C_lsm303agr/Drivers/BSP/components/lsm303agr_sensor" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32l0xx.d" -MT"Core/Src/system_stm32l0xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/system_stm32l0xx.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:126:19: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  126 |           sprintf(Buffer, "0x%X", i);
+      |                   ^~~~~~
+      |                   |
+      |                   uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:24:
+c:\st\stm32cubeide_1.5.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/main.c:133:29: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  133 |  HAL_UART_Transmit(&huart1, "Hallo...\r\n", 11, 1000);
+      |                             ^~~~~~~~~~~~~~
+      |                             |
+      |                             char *
+In file included from ../Core/Inc/stm32l0xx_hal_conf.h:281,
+                 from ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart.h:1510:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1510 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:210:12: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  210 |    sprintf((char*) tx_buffer,
+      |            ^
+../Core/Src/main.c:221:44: warning: passing argument 2 of 'lsm303agr_magnetic_raw_get' from incompatible pointer type [-Wincompatible-pointer-types]
+  221 |    lsm303agr_magnetic_raw_get(&dev_ctx_mg, data_raw_magnetic);
+      |                                            ^~~~~~~~~~~~~~~~~
+      |                                            |
+      |                                            uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:26:
+C:/Users/DNK124/Desktop/priyesh/STM32/I2C_lsm303agr/Drivers/BSP/components/lsm303agr_sensor/lsm303agr.h:1268:64: note: expected 'int16_t *' {aka 'short int *'} but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+ 1268 | int32_t lsm303agr_magnetic_raw_get(stmdev_ctx_t *ctx, int16_t *val);
+      |                                                       ~~~~~~~~~^~~
+../Core/Src/main.c:225:12: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  225 |    sprintf((char*) tx_buffer,
+      |            ^
+../Core/Src/main.c:226:31: warning: format '%f' expects argument of type 'double', but argument 3 has type 'int' [-Wformat=]
+  226 |      "Magnetic field [mG]:%4.2f\t%4.2f\t%4.2f\r\n",
+      |                           ~~~~^
+      |                               |
+      |                               double
+      |                           %4.2d
+  227 |      magnetic_mG[0], magnetic_mG[1], magnetic_mG[2]);
+      |      ~~~~~~~~~~~~~~            
+      |                 |
+      |                 int
+../Core/Src/main.c:226:38: warning: format '%f' expects argument of type 'double', but argument 4 has type 'int' [-Wformat=]
+  226 |      "Magnetic field [mG]:%4.2f\t%4.2f\t%4.2f\r\n",
+      |                                  ~~~~^
+      |                                      |
+      |                                      double
+      |                                  %4.2d
+  227 |      magnetic_mG[0], magnetic_mG[1], magnetic_mG[2]);
+      |                      ~~~~~~~~~~~~~~   
+      |                                 |
+      |                                 int
+../Core/Src/main.c:226:45: warning: format '%f' expects argument of type 'double', but argument 5 has type 'int' [-Wformat=]
+  226 |      "Magnetic field [mG]:%4.2f\t%4.2f\t%4.2f\r\n",
+      |                                         ~~~~^
+      |                                             |
+      |                                             double
+      |                                         %4.2d
+  227 |      magnetic_mG[0], magnetic_mG[1], magnetic_mG[2]);
+      |                                      ~~~~~~~~~~~~~~
+      |                                                 |
+      |                                                 int
+../Core/Src/main.c:236:47: warning: passing argument 2 of 'lsm303agr_temperature_raw_get' from incompatible pointer type [-Wincompatible-pointer-types]
+  236 |    lsm303agr_temperature_raw_get(&dev_ctx_xl, &data_raw_temperature);
+      |                                               ^~~~~~~~~~~~~~~~~~~~~
+      |                                               |
+      |                                               uint8_t ** {aka unsigned char **}
+In file included from ../Core/Src/main.c:26:
+C:/Users/DNK124/Desktop/priyesh/STM32/I2C_lsm303agr/Drivers/BSP/components/lsm303agr_sensor/lsm303agr.h:887:48: note: expected 'int16_t *' {aka 'short int *'} but argument is of type 'uint8_t **' {aka 'unsigned char **'}
+  887 |                                       int16_t *val);
+      |                                       ~~~~~~~~~^~~
+../Core/Src/main.c:238:6: warning: passing argument 1 of 'lsm303agr_from_lsb_hr_to_celsius' makes integer from pointer without a cast [-Wint-conversion]
+  238 |      data_raw_temperature);
+      |      ^~~~~~~~~~~~~~~~~~~~
+      |      |
+      |      uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:26:
+C:/Users/DNK124/Desktop/priyesh/STM32/I2C_lsm303agr/Drivers/BSP/components/lsm303agr_sensor/lsm303agr.h:862:50: note: expected 'int16_t' {aka 'short int'} but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  862 | float_t lsm303agr_from_lsb_hr_to_celsius(int16_t lsb);
+      |                                          ~~~~~~~~^~~
+../Core/Src/main.c:239:12: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  239 |    sprintf((char*) tx_buffer, "Temperature [degC]:%6.2f\r\n",
+      |            ^
+../Core/Src/main.c:239:55: warning: format '%f' expects argument of type 'double', but argument 3 has type 'int' [-Wformat=]
+  239 |    sprintf((char*) tx_buffer, "Temperature [degC]:%6.2f\r\n",
+      |                                                   ~~~~^
+      |                                                       |
+      |                                                       double
+      |                                                   %6.2d
+  240 |      temperature_degC);
+      |      ~~~~~~~~~~~~~~~~                                  
+      |      |
+      |      int
+../Core/Src/main.c: In function 'platform_read':
+../Core/Src/main.c:409:2: error: unknown type name 'sensbus_t'
+  409 |  sensbus_t *sensbus = (sensbus_t *)handle;
+      |  ^~~~~~~~~
+../Core/Src/main.c:409:24: error: 'sensbus_t' undeclared (first use in this function); did you mean 'sensbus'?
+  409 |  sensbus_t *sensbus = (sensbus_t *)handle;
+      |                        ^~~~~~~~~
+      |                        sensbus
+../Core/Src/main.c:409:24: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:409:35: error: expected expression before ')' token
+  409 |  sensbus_t *sensbus = (sensbus_t *)handle;
+      |                                   ^
+../Core/Src/main.c:421:41: warning: passing argument 3 of 'HAL_I2C_Master_Receive' makes pointer from integer without a cast [-Wint-conversion]
+  421 |  if(HAL_I2C_Master_Receive(&hi2c1, reg, *bufp, len, 1000) ==HAL_OK){
+      |                                         ^~~~~
+      |                                         |
+      |                                         uint8_t {aka unsigned char}
+In file included from ../Core/Inc/stm32l0xx_hal_conf.h:236,
+                 from ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_i2c.h:628:97: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t' {aka 'unsigned char'}
+  628 | HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData,
+      |                                                                                        ~~~~~~~~~^~~~~
+../Core/Src/main.c:409:13: warning: unused variable 'sensbus' [-Wunused-variable]
+  409 |  sensbus_t *sensbus = (sensbus_t *)handle;
+      |             ^~~~~~~
+../Core/Src/main.c:408:20: warning: unused variable 'status' [-Wunused-variable]
+  408 |  HAL_StatusTypeDef status= HAL_ERROR;
+      |                    ^~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+
+16:50:28 Build Failed. 5 errors, 15 warnings. (took 1s.328ms)
+

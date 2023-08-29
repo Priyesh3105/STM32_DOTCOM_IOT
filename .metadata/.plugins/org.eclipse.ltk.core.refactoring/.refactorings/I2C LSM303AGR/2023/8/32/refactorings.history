@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;I2C LSM303AGR/Drivers/BSP/components/lsm303agr/lsm303agr.c&apos; to &apos;lsm303agr_reg.c&apos;" description="Rename resource &apos;lsm303agr.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Drivers/BSP/components/lsm303agr/lsm303agr.c" name="lsm303agr_reg.c" stamp="1691408769200" updateReferences="true"/>
+</session>

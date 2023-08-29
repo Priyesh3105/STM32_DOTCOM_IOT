@@ -1,0 +1,10 @@
+16:47:35 **** Incremental Build of configuration Debug for project interrupt ****
+make -j4 all 
+arm-none-eabi-size   interrupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11160	    120	   1592	  12872	   3248	interrupt.elf
+Finished building: default.size.stdout
+ 
+
+16:47:35 Build Finished. 0 errors, 0 warnings. (took 385ms)
+

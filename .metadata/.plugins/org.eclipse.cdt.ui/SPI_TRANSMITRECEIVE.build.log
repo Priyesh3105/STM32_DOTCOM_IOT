@@ -1,0 +1,10 @@
+16:40:56 **** Incremental Build of configuration Debug for project SPI_TRANSMITRECEIVE ****
+make -j4 all 
+arm-none-eabi-size   SPI_TRANSMITRECEIVE.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13156	     28	   1804	  14988	   3a8c	SPI_TRANSMITRECEIVE.elf
+Finished building: default.size.stdout
+ 
+
+16:40:56 Build Finished. 0 errors, 0 warnings. (took 370ms)
+

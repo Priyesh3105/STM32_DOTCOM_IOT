@@ -1,0 +1,10 @@
+15:39:46 **** Incremental Build of configuration Debug for project TIM_COUNTER ****
+make -j4 all 
+arm-none-eabi-size   TIM_COUNTER.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12580	     20	   1772	  14372	   3824	TIM_COUNTER.elf
+Finished building: default.size.stdout
+ 
+
+15:39:46 Build Finished. 0 errors, 0 warnings. (took 420ms)
+

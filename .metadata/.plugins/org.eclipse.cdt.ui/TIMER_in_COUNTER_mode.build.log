@@ -1,0 +1,10 @@
+15:44:12 **** Build of configuration Debug for project TIMER_in_COUNTER_mode ****
+make -j4 all 
+arm-none-eabi-size   TIMER_in_COUNTER_mode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11616	     20	   1708	  13344	   3420	TIMER_in_COUNTER_mode.elf
+Finished building: default.size.stdout
+ 
+
+15:44:12 Build Finished. 0 errors, 0 warnings. (took 348ms)
+

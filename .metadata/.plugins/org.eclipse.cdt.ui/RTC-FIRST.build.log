@@ -1,0 +1,10 @@
+17:50:56 **** Incremental Build of configuration Debug for project RTC-FIRST ****
+make -j4 all 
+arm-none-eabi-size   RTC-FIRST.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14964	    120	   1848	  16932	   4224	RTC-FIRST.elf
+Finished building: default.size.stdout
+ 
+
+17:50:57 Build Finished. 0 errors, 0 warnings. (took 386ms)
+

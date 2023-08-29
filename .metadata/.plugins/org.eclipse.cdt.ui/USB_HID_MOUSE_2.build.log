@@ -1,0 +1,10 @@
+17:55:29 **** Incremental Build of configuration Debug for project USB_HID_MOUSE_2 ****
+make -j4 all 
+arm-none-eabi-size   USB_HID_MOUSE_2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  30932	    364	   3588	  34884	   8844	USB_HID_MOUSE_2.elf
+Finished building: default.size.stdout
+ 
+
+17:55:29 Build Finished. 0 errors, 0 warnings. (took 432ms)
+

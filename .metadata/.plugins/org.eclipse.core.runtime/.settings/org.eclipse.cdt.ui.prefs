@@ -1,0 +1,12 @@
+eclipse.preferences.version=1
+formattingConfirmScopeForEmptySelection=false
+scalability.contentAssistAutoActivation=true
+scalability.detect=false
+scalability.parserBasedContentAssist=true
+scalability.reconciler=false
+scalability.semanticHighlight=true
+scalability.syntaxColor=true
+sourceHoverBackgroundColor=47,47,47
+spelling_locale_initialized=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

@@ -1,0 +1,41 @@
+15:19:18 **** Incremental Build of configuration Debug for project TIMER_GET_COUNTER ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:112:13: error: static declaration of 'SystemClock_Config' follows non-static declaration
+  112 | static void SystemClock_Config(void)
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:51:6: note: previous declaration of 'SystemClock_Config' with type 'void(void)'
+   51 | void SystemClock_Config(void);
+      |      ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'SystemClock_Config':
+../Core/Src/main.c:126:27: error: 'RCC_PLLInitTypeDef' has no member named 'PLLM'; did you mean 'PLLMUL'?
+  126 |     RCC_OscInitStruct.PLL.PLLM = 25;  // HSE divider for PLL
+      |                           ^~~~
+      |                           PLLMUL
+../Core/Src/main.c:127:26: error: 'RCC_PLLInitTypeDef' has no member named 'PLLN'
+  127 |     RCC_OscInitStruct.PLL.PLLN = 336; // PLL multiplication factor
+      |                          ^
+../Core/Src/main.c:128:26: error: 'RCC_PLLInitTypeDef' has no member named 'PLLP'
+  128 |     RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
+      |                          ^
+../Core/Src/main.c:128:34: error: 'RCC_PLLP_DIV2' undeclared (first use in this function); did you mean 'RCC_PLL_DIV2'?
+  128 |     RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
+      |                                  ^~~~~~~~~~~~~
+      |                                  RCC_PLL_DIV2
+../Core/Src/main.c:128:34: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:129:26: error: 'RCC_PLLInitTypeDef' has no member named 'PLLQ'
+  129 |     RCC_OscInitStruct.PLL.PLLQ = 7;   // USB/SDIO/RNG clock divider
+      |                          ^
+../Core/Src/main.c:138:45: error: 'FLASH_LATENCY_5' undeclared (first use in this function); did you mean 'FLASH_LATENCY_0'?
+  138 |     HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_5);
+      |                                             ^~~~~~~~~~~~~~~
+      |                                             FLASH_LATENCY_0
+At top level:
+../Core/Src/main.c:112:13: warning: 'SystemClock_Config' defined but not used [-Wunused-function]
+  112 | static void SystemClock_Config(void)
+      |             ^~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+
+15:19:18 Build Failed. 8 errors, 1 warnings. (took 428ms)
+

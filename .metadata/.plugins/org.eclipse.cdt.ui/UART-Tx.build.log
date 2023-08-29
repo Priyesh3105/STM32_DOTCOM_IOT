@@ -1,0 +1,10 @@
+17:03:03 **** Incremental Build of configuration Debug for project UART-Tx ****
+make -j4 all 
+arm-none-eabi-size   UART-Tx.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15876	    132	   2044	  18052	   4684	UART-Tx.elf
+Finished building: default.size.stdout
+ 
+
+17:03:03 Build Finished. 0 errors, 0 warnings. (took 385ms)
+

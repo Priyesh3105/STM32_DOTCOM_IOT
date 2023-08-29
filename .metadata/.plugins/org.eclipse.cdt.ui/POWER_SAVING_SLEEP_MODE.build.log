@@ -1,0 +1,10 @@
+13:35:58 **** Incremental Build of configuration Debug for project POWER_SAVING_SLEEP_MODE ****
+make -j4 all 
+arm-none-eabi-size   POWER_SAVING_SLEEP_MODE.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14976	     20	   1716	  16712	   4148	POWER_SAVING_SLEEP_MODE.elf
+Finished building: default.size.stdout
+ 
+
+13:35:58 Build Finished. 0 errors, 0 warnings. (took 388ms)
+

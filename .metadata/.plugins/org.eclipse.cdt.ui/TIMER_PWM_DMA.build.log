@@ -1,0 +1,10 @@
+09:59:46 **** Build of configuration Debug for project TIMER_PWM_DMA ****
+make -j4 all 
+arm-none-eabi-size   TIMER_PWM_DMA.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12100	     20	   1772	  13892	   3644	TIMER_PWM_DMA.elf
+Finished building: default.size.stdout
+ 
+
+09:59:47 Build Finished. 0 errors, 0 warnings. (took 1s.344ms)
+

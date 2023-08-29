@@ -1,0 +1,10 @@
+15:25:23 **** Incremental Build of configuration Debug for project EPAPERLCD ****
+make -j4 all 
+arm-none-eabi-size   EPAPERLCD.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7816	     20	   1628	   9464	   24f8	EPAPERLCD.elf
+Finished building: default.size.stdout
+ 
+
+15:25:23 Build Finished. 0 errors, 0 warnings. (took 365ms)
+
