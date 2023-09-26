@@ -1,0 +1,10 @@
+14:09:12 **** Incremental Build of configuration Debug for project FreeRTOS_UART ****
+make -j4 all 
+arm-none-eabi-size   FreeRTOS_UART.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15104	     80	   5704	  20888	   5198	FreeRTOS_UART.elf
+Finished building: default.size.stdout
+ 
+
+14:09:12 Build Finished. 0 errors, 0 warnings. (took 484ms)
+

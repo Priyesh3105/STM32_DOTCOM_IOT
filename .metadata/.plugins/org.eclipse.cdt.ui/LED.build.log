@@ -1,17 +1,10 @@
-13:47:25 **** Incremental Build of configuration Debug for project LED ****
+15:16:43 **** Incremental Build of configuration Debug for project LED ****
 make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "LED.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\DNK124\Desktop\priyesh\STM32\LED\STM32L053C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LED.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: LED.elf
- 
 arm-none-eabi-size   LED.elf 
-arm-none-eabi-objdump -h -S  LED.elf  > "LED.list"
    text	   data	    bss	    dec	    hex	filename
    6484	     20	   1572	   8076	   1f8c	LED.elf
 Finished building: default.size.stdout
-Finished building: LED.list
- 
  
 
-13:47:27 Build Finished. 0 errors, 0 warnings. (took 1s.342ms)
+15:16:43 Build Finished. 0 errors, 0 warnings. (took 384ms)
 

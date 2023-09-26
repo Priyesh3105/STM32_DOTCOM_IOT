@@ -1,0 +1,10 @@
+11:30:32 **** Incremental Build of configuration Debug for project FreeRTOS_Mutex ****
+make -j4 all 
+arm-none-eabi-size   FreeRTOS_Mutex.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19724	     24	   5776	  25524	   63b4	FreeRTOS_Mutex.elf
+Finished building: default.size.stdout
+ 
+
+11:30:33 Build Finished. 0 errors, 0 warnings. (took 897ms)
+

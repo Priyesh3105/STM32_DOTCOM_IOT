@@ -1,0 +1,10 @@
+14:57:27 **** Incremental Build of configuration Debug for project FreeRTOS_Simple_Queue ****
+make -j4 all 
+arm-none-eabi-size   FreeRTOS_Simple_Queue.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25472	    104	   6112	  31688	   7bc8	FreeRTOS_Simple_Queue.elf
+Finished building: default.size.stdout
+ 
+
+14:57:27 Build Finished. 0 errors, 0 warnings. (took 481ms)
+

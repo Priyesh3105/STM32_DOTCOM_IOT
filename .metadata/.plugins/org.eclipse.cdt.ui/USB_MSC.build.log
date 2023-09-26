@@ -1,0 +1,10 @@
+12:33:57 **** Incremental Build of configuration Debug for project USB_MSC ****
+make -j4 all 
+arm-none-eabi-size   USB_MSC.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37060	    316	 107140	 144516	  23484	USB_MSC.elf
+Finished building: default.size.stdout
+ 
+
+12:33:58 Build Finished. 0 errors, 0 warnings. (took 476ms)
+

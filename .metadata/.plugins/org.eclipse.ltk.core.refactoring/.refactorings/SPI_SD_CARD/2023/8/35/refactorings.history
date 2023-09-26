@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;SPI_SD_CARD/Core/Inc/fatf_sd.h&apos; to &apos;fatfs_sd.h&apos;" description="Rename resource &apos;fatf_sd.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Inc/fatf_sd.h" name="fatfs_sd.h" stamp="1693479161089" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;SPI_SD_CARD/Core/Src/fatf_sd.c&apos; to &apos;fatfs_sd.c&apos;" description="Rename resource &apos;fatf_sd.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/fatf_sd.c" name="fatfs_sd.c" stamp="1693479173274" updateReferences="true"/>
+</session>

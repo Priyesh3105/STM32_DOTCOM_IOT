@@ -1,9 +1,14 @@
-17:35:10 **** Incremental Build of configuration Debug for project USB_MSC_HOST ****
+12:08:34 **** Incremental Build of configuration Debug for project FreeRTOS_Mutex_Vs_Binary_Semaphore ****
 make -j4 all 
-arm-none-eabi-gcc "../USB_DEVICE/App/usbd_storage_if.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"USB_DEVICE/App/usbd_storage_if.d" -MT"USB_DEVICE/App/usbd_storage_if.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "USB_DEVICE/App/usbd_storage_if.o"
-arm-none-eabi-gcc -o "USB_MSC_HOST.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\DNK124\Desktop\Priyesh\STM32\USB_MSC_HOST\STM32L053C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="USB_MSC_HOST.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: USB_MSC_HOST.elf section `.bss' will not fit in region `RAM'
-C:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: region `RAM' overflowed by 61808 bytes
-collect2.exe: error: ld returned 1 exit status
-make: *** [makefile:68: USB_MSC_HOST.elf] Error 1
-"make -j4 all" terminated with exit code 2. Build might be incomplete.
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "FreeRTOS_Mutex_Vs_Binary_Semaphore.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\DNK124\Desktop\Priyesh\STM32\FreeRTOS_Mutex_Vs_Binary_Semaphore\STM32L053C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FreeRTOS_Mutex_Vs_Binary_Semaphore.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: FreeRTOS_Mutex_Vs_Binary_Semaphore.elf
+ 
+arm-none-eabi-size   FreeRTOS_Mutex_Vs_Binary_Semaphore.elf 
+arm-none-eabi-objdump -h -S  FreeRTOS_Mutex_Vs_Binary_Semaphore.elf  > "FreeRTOS_Mutex_Vs_Binary_Semaphore.list"
+   text	   data	    bss	    dec	    hex	filename
+  20004	     24	   5784	  25812	   64d4	FreeRTOS_Mutex_Vs_Binary_Semaphore.elf
+Finished building: default.size.stdout
+ 
+Finished building: FreeRTOS_Mutex_Vs_Binary_Semaphore.list
+ 

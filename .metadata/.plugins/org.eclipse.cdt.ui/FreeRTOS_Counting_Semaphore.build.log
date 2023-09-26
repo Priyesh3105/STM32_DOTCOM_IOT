@@ -1,0 +1,10 @@
+14:35:24 **** Incremental Build of configuration Debug for project FreeRTOS_Counting_Semaphore ****
+make -j4 all 
+arm-none-eabi-size   FreeRTOS_Counting_Semaphore.elf 
+   text	   data	    bss	    dec	    hex	filename
+  24008	     36	   5780	  29824	   7480	FreeRTOS_Counting_Semaphore.elf
+Finished building: default.size.stdout
+ 
+
+14:35:25 Build Finished. 0 errors, 0 warnings. (took 482ms)
+

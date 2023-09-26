@@ -1,0 +1,10 @@
+15:44:44 **** Incremental Build of configuration Debug for project POWER_SAVING_SLEEP_MODE_WAKE_UP_BY_RTC ****
+make -j4 all 
+arm-none-eabi-size   POWER_SAVING_SLEEP_MODE_WAKE_UP_BY_RTC.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12712	     20	   1748	  14480	   3890	POWER_SAVING_SLEEP_MODE_WAKE_UP_BY_RTC.elf
+Finished building: default.size.stdout
+ 
+
+15:44:44 Build Finished. 0 errors, 0 warnings. (took 513ms)
+

@@ -1,0 +1,12 @@
+../Drivers/BSP/components/sht21_sensor/sht21.c:24:6:SHT2x_Init	1
+../Drivers/BSP/components/sht21_sensor/sht21.c:31:6:SHT2x_SoftReset	1
+../Drivers/BSP/components/sht21_sensor/sht21.c:40:9:SHT2x_ReadUserReg	1
+../Drivers/BSP/components/sht21_sensor/sht21.c:53:10:SHT2x_GetRaw	1
+../Drivers/BSP/components/sht21_sensor/sht21.c:65:7:SHT2x_GetTemperature	2
+../Drivers/BSP/components/sht21_sensor/sht21.c:75:7:SHT2x_GetRelativeHumidity	2
+../Drivers/BSP/components/sht21_sensor/sht21.c:86:6:SHT2x_SetResolution	1
+../Drivers/BSP/components/sht21_sensor/sht21.c:98:7:SHT2x_CelsiusToFahrenheit	1
+../Drivers/BSP/components/sht21_sensor/sht21.c:107:7:SHT2x_CelsiusToKelvin	1
+../Drivers/BSP/components/sht21_sensor/sht21.c:117:9:SHT2x_GetInteger	1
+../Drivers/BSP/components/sht21_sensor/sht21.c:127:10:SHT2x_GetDecimal	1
+../Drivers/BSP/components/sht21_sensor/sht21.c:138:10:SHT2x_Ipow	2
